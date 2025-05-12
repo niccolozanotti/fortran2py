@@ -1,0 +1,12 @@
+[project]
+name = "fortran2py"
+version = "0.1"
+description = "Examples interfacing Fortran with python"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "meson>=1.8.0",
+    "ninja>=1.11.1.4",
+    "numpy>=2.2.5",
+]
