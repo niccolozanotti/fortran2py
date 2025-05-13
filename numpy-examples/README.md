@@ -32,3 +32,14 @@ After removing `depend(m,n)` statement from the signature file (see [here](https
 python -m numpy.f2py -c myroutine.pyf myroutine.f90
 ```
 Test the module can be correctly imported via `python myrout.py`.
+
+## CMake example 
+
+Example using CMake to build (see [here](https://numpy.org/doc/stable/f2py/buildtools/cmake.html#using-via-cmake) for details) Fibonacci sequence in Fortran 77 ([fibonacci.f](./fibonacci.f)):
+```shell
+cmake -S . -B build
+cmake --build build
+cd build
+python -c "import fibonacci; print(fibonacci.fib.__doc__);print('Fibonacci sequence for 15');print(fibonacci.fib(10))";
+```
+
