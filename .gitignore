@@ -1,5 +1,17 @@
 # Apple Desktop Services Store
 **.DS_Store
+# CMake related build files
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
